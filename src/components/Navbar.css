@@ -1,4 +1,11 @@
 .navbar{
-  background-color: #77994B ;
-  position: absolute;
+    background-color: #77994B ;
+}
+
+.navbar-brand{
+    color: #fff;
+}
+
+.nav-item{
+    color: #fff;
 }
