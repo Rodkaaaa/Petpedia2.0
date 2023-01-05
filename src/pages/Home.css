@@ -1,0 +1,40 @@
+.completeSection {
+    position: relative;
+    background-color: #FF8C72 ;
+    height: 600px;
+    border-radius: 10px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.texto{
+
+    justify-content: center;
+    text-align: start;
+    padding-left: 200px;
+    padding-top: 50px;
+    
+}
+
+.section{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.tituloSection{
+    font-size: 60px;
+    font-weight:bold;
+}
+
+.textSection{
+    font-size: 20px;
+}
+
+SectionBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,3 +1,4 @@
 import Navbar from "./Navbar";
 import CarouselComponent from "./Carousel";
-export {Navbar, CarouselComponent}
+import SectionBody from "./SectionBody";
+export {Navbar, CarouselComponent, SectionBody}
