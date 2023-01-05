@@ -1,5 +1,8 @@
 import React from "react";
 import "./Carousel.css"
+import foto1 from "../img/hero1.png"
+import foto2 from "../img/hero2.png"
+import foto3 from "../img/hero3.png"
 
 const CarouselComponent = () => {
   return (
@@ -7,21 +10,21 @@ const CarouselComponent = () => {
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src="https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={foto1}
             class="d-block w-100"
             alt="..."
           />
         </div>
         <div class="carousel-item">
           <img
-            src="https://images.pexels.com/photos/4921291/pexels-photo-4921291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={foto2}
             class="d-block w-100"
             alt="..."
           />
         </div>
         <div class="carousel-item">
           <img
-            src="https://images.pexels.com/photos/4560155/pexels-photo-4560155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src={foto3}
             class="d-block w-100"
             alt="..."
           />
