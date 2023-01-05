@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./SectionBody.css";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -7,7 +8,7 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
-import "./SectionBody.css";
+
 
 import { CardActionArea } from "@mui/material";
 

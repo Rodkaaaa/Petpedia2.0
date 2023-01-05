@@ -11,7 +11,9 @@ const Home = () => {
   return (
     <div className="all">
       <Navbar />
-      <CarouselComponent />
+      <div className="carousel"> 
+      <CarouselComponent/>
+      </div>
       <br />
       <br />
 
