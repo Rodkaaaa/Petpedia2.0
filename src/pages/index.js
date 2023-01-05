@@ -1,3 +1,3 @@
 import Home from "./Home";
-
-export {Home}
+import Publicaciones from "./Publicaciones";
+export {Home, Publicaciones}
