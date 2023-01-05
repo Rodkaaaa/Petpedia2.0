@@ -1,14 +1,34 @@
 import React from "react";
-import { CarouselComponent, Navbar, FooterComponent } from "../components";
+import {
+  CarouselComponent,
+  Navbar,
+  SectionBody,
+  FooterComponent,
+} from "../components";
+import "./Home.css";
 
 const Home = () => {
-    return(
-        <div>
-        <Navbar/>
-        <CarouselComponent/>
-        <FooterComponent/>
-        </div>
-    )
-}
+  return (
+    <div className="all">
+      <Navbar />
+      <CarouselComponent />
+      <br />
+      <br />
 
-export default Home
+      <div className="completeSection">
+        <div className="texto">
+          <h2 className="tituloSection">Artículos de interés </h2>
+          <p className="textSection">
+            Los especialistas nos entregan todo su conocimiento
+          </p>
+        </div>
+        <div className="section ">
+          <SectionBody />
+        </div>
+      </div>
+      <FooterComponent />
+    </div>
+  );
+};
+
+export default Home;
