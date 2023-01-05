@@ -1,12 +1,12 @@
 import React from "react";
-import { CarouselComponent, Navbar } from "../components";
+import { CarouselComponent, Navbar, FooterComponent } from "../components";
 
 const Home = () => {
     return(
         <div>
         <Navbar/>
-        
         <CarouselComponent/>
+        <FooterComponent/>
         </div>
     )
 }
