@@ -1,7 +1,7 @@
 import React from "react";
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import { Home, NosotrosPage, Publicaciones} from "./pages";
+import { Home, LoginPage, NosotrosPage, Publicaciones} from "./pages";
 
 const App = () => {
   return (
@@ -11,6 +11,7 @@ const App = () => {
       <Route path="/" element = {<Home/>}/>
       <Route path="/nosotros" element = {<NosotrosPage/>}/>
       <Route path="/publicaciones" element={<Publicaciones />} />
+      <Route path="/login" element={<LoginPage />} />
 
       </Routes>
     </BrowserRouter>
