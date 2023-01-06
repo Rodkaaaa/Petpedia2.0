@@ -25,7 +25,7 @@ const Navbar = () => {
           <a class="nav-link" href="http://localhost:3000/publicaciones" >Publicaciones</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link" href="#">Nosotros</a>
+          <a class="nav-link" href="http://localhost:3000/nosotros">Nosotros</a>
         </li>
       </ul>
     </div>

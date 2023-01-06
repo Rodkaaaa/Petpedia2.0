@@ -1,7 +1,7 @@
 import React from "react";
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import { Home, NosotrosPage } from "./pages";
+import { Home, NosotrosPage, Publicaciones} from "./pages";
 
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
 
       <Route path="/" element = {<Home/>}/>
       <Route path="/nosotros" element = {<NosotrosPage/>}/>
+      <Route path="/publicaciones" element={<Publicaciones />} />
 
       </Routes>
     </BrowserRouter>
