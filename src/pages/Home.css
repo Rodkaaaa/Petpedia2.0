@@ -1,5 +1,5 @@
+
 .completeSection {
-    padding-top: 100px;
     position: relative;
     background-color: #FF8C72 ;
     height: 600px;
@@ -41,6 +41,7 @@ SectionBody{
 }
 
 .carousel{
+    padding-top: 25px;
     display: flex;
     width: 100%;
     /* height: 800px; */
