@@ -27,6 +27,9 @@ const Navbar = () => {
         <li class="nav-item ms-3">
           <a class="nav-link" href="http://localhost:3000/nosotros">Nosotros</a>
         </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="http://localhost:3000/login">login</a>
+        </li>
       </ul>
     </div>
   </div>

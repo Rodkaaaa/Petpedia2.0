@@ -1,10 +1,12 @@
 import React from "react";
-import {Login} from "../components";
+import {Login, Navbar, FooterComponent } from "../components";
 
 const LoginPage = () => {
     return (
         <div className="principal">
+        <Navbar/>
         <Login/>
+        <FooterComponent/>
         </div>
     );
 };
