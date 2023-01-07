@@ -14,7 +14,7 @@ const Navbar = () => {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link ms-5" aria-current="page" href="#">Veterinarias</a>
+          <a class="nav-link ms-5" href='http://localhost:3000/veterinarias'>Veterinarias</a>
         </li>
         <li class="nav-item ms-3">
           <a class="nav-link" href="#">Publicaciones</a>
