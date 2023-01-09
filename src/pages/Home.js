@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useCallback} from "react";
 import {
   CarouselComponent,
   Navbar,
@@ -6,17 +6,24 @@ import {
   FooterComponent,
 } from "../components";
 import "./Home.css";
+import estadis from "../img/estadisticas.png"
 
 const Home = () => {
   return (
     <div className="all">
       <Navbar />
+      
       <div className="carousel"> 
       <CarouselComponent/>
       </div>
-      <br />
-      <br />
 
+      <div className="estadisticas">
+      <img
+            src={estadis}
+            class="d-block w-100"
+            alt="..."
+          />
+      </div>
       <div className="completeSection">
         <div className="texto">
           <h2 className="tituloSection">Artículos de interés </h2>

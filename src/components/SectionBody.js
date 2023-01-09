@@ -31,17 +31,16 @@ const SectionBody = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="https://post.healthline.com/wp-content/uploads/2021/06/lizard-iguana-1200x628-facebook.jpg"
+                  image="https://www.linkpicture.com/q/articulo3.png"
                   alt="img not found"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Lizard
+                    Vacunas al día
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    ¿Sabes precisamente que hace cada vacuna de tu mascota?
+                    Los avances de la ciencia nos indican grandes descubrimientos en materia de medicina veterinaria
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -55,17 +54,16 @@ const SectionBody = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="https://post.healthline.com/wp-content/uploads/2021/06/lizard-iguana-1200x628-facebook.jpg"
+                  image="https://www.linkpicture.com/q/articulo4.png"
                   alt="img not found"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Lizard
+                    Dieta BARF
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                  ¿Es realmente la dieta ideal para nuestras mascotas? Descubre todos sus beneficios
+                  en el siguiente artículo
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -79,17 +77,15 @@ const SectionBody = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="https://post.healthline.com/wp-content/uploads/2021/06/lizard-iguana-1200x628-facebook.jpg"
+                  image="https://www.linkpicture.com/q/articulo5.png"
                   alt="img not found"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Lizard
+                    Vida indoor
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    La importancia de mantener a nuestras mascotas en espacios seguros y controlados
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -103,17 +99,15 @@ const SectionBody = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="https://post.healthline.com/wp-content/uploads/2021/06/lizard-iguana-1200x628-facebook.jpg"
+                  image="https://www.linkpicture.com/q/articulo6.png"
                   alt="img not found"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Lizard
+                    Tratamiento oncológico
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                    Existen alternativas para prolongar y garantizar la calidad de vida de tu mascota
                   </Typography>
                 </CardContent>
               </CardActionArea>

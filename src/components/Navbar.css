@@ -1,9 +1,16 @@
+header{
+    width: 100%;
+    position: fixed ;
+    z-index: 100;
+}
+
 .navbar{
     background-color: #77994B ;
 }
 
 .navbar-brand{
     color: #fff;
+    font-family: Lato, amaranth;
 }
 
 .nav-item{
