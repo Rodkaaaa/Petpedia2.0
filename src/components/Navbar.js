@@ -1,7 +1,7 @@
 import React, {useCallback} from 'react'
 import { useNavigate } from "react-router-dom";
-
 import "./Navbar.css"
+
 const Navbar = () => {
   const navigate = useNavigate();
   const handleOnClick = useCallback(()=>navigate("/publicaciones",{},[navigate]));
@@ -12,7 +12,7 @@ const Navbar = () => {
   <div class="container-fluid">
     <a class="navbar-brand" href="http://localhost:3000/">
     <img src="https://github.com/Rodkaaaa/Petpedia/blob/main/petpedia/src/main/resources/static/img/LogosPetpediaBlanco-05.png?raw=true" alt="Logo" width="30" height="24" class="align-text-top"/>
-        Petpedia</a>
+        petpedia</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,6 +32,7 @@ const Navbar = () => {
           <a class="nav-link" href="http://localhost:3000/login">login</a>
         </li>
       </ul>
+      <button type="button" class="botoncito">Login</button>
     </div>
   </div>
 </nav>
