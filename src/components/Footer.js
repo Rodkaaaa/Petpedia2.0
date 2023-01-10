@@ -68,7 +68,7 @@ const FooterComponent = () => {
         <div class="container">
         <div class="row">
         <div class="col-md-12 text-center">
-        <p>Copyright © Petpedia 2022</p>
+        <p>Copyright © Petpedia {new Date().getFullYear()}</p>
         </div>
         </div>
         </div>
