@@ -7,8 +7,10 @@ import CardPostComponent from "./Card"
 import NosotrosComponent from "./Nosotros";
 import PerfilesComponent from "./Perfiles";
 import TarjetaVetComponent from "./TarjetaVet"
+import Publicacion from "./Publicacion";
 
-export {Navbar, CarouselComponent, FooterComponent, SectionBody, NosotrosComponent, PerfilesComponent,CardPostComponent, Login, TarjetaVetComponent}
+export {Navbar, CarouselComponent, FooterComponent, SectionBody, NosotrosComponent, PerfilesComponent,CardPostComponent, 
+    Login, TarjetaVetComponent, Publicacion}
 
 
 
