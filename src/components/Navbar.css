@@ -10,9 +10,17 @@ header{
 
 .navbar-brand{
     color: #fff;
-    font-family: Lato, amaranth;
+    font-family: amaranth;
 }
 
 .nav-item{
     color: #fff;
+}
+
+.botoncito {
+    margin-left: auto;
+    background-color: #FF8C72;
+    border-radius: 8px;
+    height: 35px;
+    width: 70px;
 }
