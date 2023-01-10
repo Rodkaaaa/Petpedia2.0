@@ -41,6 +41,7 @@ const allNombrePost = async(nombre)=>{
           Posts={state}
           searchName={stateSearch}
           useEffects={useEffect}
+          infoText = "Publicaciones"
         />
       </div>
       <FooterComponent />
