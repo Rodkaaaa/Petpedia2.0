@@ -15,6 +15,7 @@ const CardPostComponent = ({
   searchName,
   setPostEditado,
   useEffects,
+  infoText,
 }) => {
   const [busqueda, setBusqueda] = useState("");
 
@@ -48,7 +49,7 @@ const CardPostComponent = ({
       <div className="barraTitulo">
         <div className="buscar">
         <div className="texto">
-          <h1 className="titulo">Publicaciones</h1>
+          <h1 className="titulo">{infoText}</h1>
         </div>
           <TextField
             className="search"

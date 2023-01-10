@@ -4,7 +4,7 @@ import "./Navbar.css"
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const handleOnClick = useCallback(()=>navigate("/publicaciones",{},[navigate]));
+  const handleOnClick = useCallback(()=>navigate("/login",{},[navigate]));
 
   return (
     <header>
@@ -28,11 +28,8 @@ const Navbar = () => {
         <li class="nav-item ms-3">
           <a class="nav-link" href="http://localhost:3000/nosotros">Nosotros</a>
         </li>
-        <li class="nav-item ms-3">
-          <a class="nav-link" href="http://localhost:3000/login">login</a>
-        </li>
       </ul>
-      <button type="button" class="botoncito">Login</button>
+      <button type="button" class="botoncito" onClick={()=>{handleOnClick()}} >Login</button>
     </div>
   </div>
 </nav>
