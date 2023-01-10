@@ -1,7 +1,8 @@
 import React, {  useEffect, useState } from "react";
 import { getAllPost, findAllNombrePost } from "../services/Post";
- import { Publicacion } from "../components";
+ import { Publicacion, Navbar, FooterComponent } from "../components";
 
+ import "./PubliPage.css";
 
 // const post = [{
 //   url: "",
@@ -29,12 +30,14 @@ const PubliPage = () => {
   }
 
   return (
-    <div className='App'>
-    <div className='contenedor-principal'>
-      <hr></hr>
-    <Publicacion Posts={state} search = {allNombrePost} />
+    <div>
+      <Navbar />
+      <div class="grilla">
+      <Publicacion Posts={state} search = {allNombrePost} />
+      </div>
+      <FooterComponent />
     </div>
-    </div>
+
     
   );
 };
