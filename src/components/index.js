@@ -6,6 +6,11 @@ import Login from "./Login";
 import CardPostComponent from "./Card"
 import NosotrosComponent from "./Nosotros";
 import PerfilesComponent from "./Perfiles";
-export {Navbar, CarouselComponent, FooterComponent, SectionBody, NosotrosComponent, PerfilesComponent,CardPostComponent, Login}
+import TarjetaVetComponent from "./TarjetaVet"
+import Publicacion from "./Publicacion";
+
+export {Navbar, CarouselComponent, FooterComponent, SectionBody, NosotrosComponent, PerfilesComponent,CardPostComponent, 
+    Login, TarjetaVetComponent, Publicacion}
+
 
 

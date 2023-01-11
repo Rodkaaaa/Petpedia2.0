@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { CardPostComponent, Navbar, FooterComponent } from "../components";
-import "./Publicaciones.css";
+import { TarjetaVetComponent, Navbar, FooterComponent, CardPostComponent } from "../components";
+import "./Veterinarias.css";
 import { getAllPost } from "../services/Post";
-/* import TextField from "@mui/material/TextField";
- */
 
-/* import search from "../components"; */
-
-const Publicaciones = () => {
+const VeterinariasPage = () => {
   const [state, setState] = useState([]);
-  const [stateSearch, setStateSearch] = useState([]);
+  const [stateSearch, setStateSearch] = useState("");
 
   useEffect(() => {
     getPost();
@@ -21,17 +17,6 @@ const Publicaciones = () => {
     setStateSearch(postBD);
   };
 
-  /* const getComuna = async()=>{
-  const ComunaBD = await getAllComuna();
-  setStateComuna(ComunaBD)
-} */
-  /* 
-const allNombrePost = async(nombre)=>{
-  const postBD = await findAllNombrePost(nombre)
-    setState(postBD)
-    getPost()
-} */
-
   return (
     <div>
       <Navbar />
@@ -41,12 +26,11 @@ const allNombrePost = async(nombre)=>{
           Posts={state}
           searchName={stateSearch}
           useEffects={useEffect}
-          infoText = "Publicaciones"
+          infoText = "Veterinarias"
         />
       </div>
       <FooterComponent />
     </div>
   );
 };
-
-export default Publicaciones;
+export default VeterinariasPage;

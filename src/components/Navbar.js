@@ -1,10 +1,10 @@
 import React, {useCallback} from 'react'
 import { useNavigate } from "react-router-dom";
-
 import "./Navbar.css"
+
 const Navbar = () => {
   const navigate = useNavigate();
-  const handleOnClick = useCallback(()=>navigate("/publicaciones",{},[navigate]));
+  const handleOnClick = useCallback(()=>navigate("/login",{},[navigate]));
 
   return (
     <header>
@@ -19,7 +19,8 @@ const Navbar = () => {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link ms-5" aria-current="page">Veterinarias</a>
+
+          <a class="nav-link ms-5" href='http://localhost:3000/veterinarias'>Veterinarias</a>
         </li>
         <li class="nav-item ms-3">
           <a class="nav-link" href="http://localhost:3000/publicaciones" >Publicaciones</a>
@@ -27,10 +28,8 @@ const Navbar = () => {
         <li class="nav-item ms-3">
           <a class="nav-link" href="http://localhost:3000/nosotros">Nosotros</a>
         </li>
-        <li class="nav-item ms-3">
-          <a class="nav-link" href="http://localhost:3000/login">login</a>
-        </li>
       </ul>
+      <button type="button" class="botoncito" onClick={()=>{handleOnClick()}} >Login</button>
     </div>
   </div>
 </nav>
