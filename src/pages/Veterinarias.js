@@ -21,13 +21,12 @@ const VeterinariasPage = () => {
     <div>
       <Navbar />
       <div class="grilla">
-        <CardPostComponent
-          setPostEditado={setState}
-          Posts={state}
-          searchName={stateSearch}
-          useEffects={useEffect}
-          infoText = "Veterinarias"
-        />
+        <TarjetaVetComponent
+        setPostEditado={setState}
+        Posts={state}
+        searchName={stateSearch}
+        useEffects={useEffect}
+        infoText = "Veterinarias"/>
       </div>
       <FooterComponent />
     </div>

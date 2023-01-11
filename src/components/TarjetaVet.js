@@ -1,159 +1,108 @@
-import React, {useState} from 'react';
-import { styled } from '@mui/material/styles';
-import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
-import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { useNavigate } from "react-router-dom";
-
-import './TarjetaVet.css';
-
-import MapIcon from '@mui/icons-material/Map';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
+import React, { useState, useEffect } from "react";
+import TextField from "@mui/material/TextField";
+/* import data from "./data.json"; */
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import SearchIcon from "@mui/icons-material/Search";
+import "./Card.css";
+import { SportsEsports } from "@mui/icons-material";
 
 
-const ExpandMore = styled((props) => {
-    const { expand, ...other } = props;
-    return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-    transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-        duration: theme.transitions.duration.shortest,
-    }),
-}));
-
-export default function TarjetaVetComponent({ Posts }) {
-    const [expanded, setExpanded] = React.useState(false);
-
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
+const TarjetaVetComponent = ({
+    Posts,
+    searchName,
+    setPostEditado,
+    useEffects,
+    infoText,
+  }) => {
+    const [busqueda, setBusqueda] = useState("");
+  
+    const handleChange = (e) => {
+      setBusqueda(e.target.value);
+      filtrar(e.target.value);
     };
+  
+    const filtrar = (terminoBusqueda) => {
+      var resultadosBusqueda = searchName.filter((elemento) => {
+        if (
+          elemento.titulo
+            .toString()
+            .toLowerCase()
+            .includes(terminoBusqueda.toLowerCase()) ||
+          elemento.contenido
+            .toString()
+            .toLowerCase()
+            .includes(terminoBusqueda.toLowerCase())
+        ) {
+          return elemento;
+        }
+      });
+      setPostEditado(resultadosBusqueda);
+    };
+  
+    useEffect(() => {}, [useEffect]);
 
     return (
-        <div className='contenedorInfo'>
-        <div class="grid">
-            <div class="row casillas">
-                {Posts.map((post) => (
-                    <Card sx={{ maxWidth: 345 }}>
-                        <CardHeader
-                            avatar={
-                                <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                                    P
-                                </Avatar>
-                            }
-                            action={
-                                <IconButton aria-label="settings">
-                                    <MoreVertIcon />
-                                </IconButton>
-                            }
-                            title={post.titulo}
-                            subheader={post.usuario.comuna.nombreComuna}
-                        />
-
-                        <div className='imagenVet'>
-                            <img
-                                height="230"
-                                src={post.url}
-                                alt='imagenVeterinaria' />
-                        </div>
-
-                        <CardContent>
-
-                            <Typography variant="body2" color="text.secondary">
-                                {post.contenido}
-                            </Typography>
-                        </CardContent>
-                        <CardActions disableSpacing>
-                            <IconButton aria-label="add to favorites">
-                                <FavoriteIcon />
-                            </IconButton>
-                            <IconButton aria-label="share">
-                                <ShareIcon />
-                            </IconButton>
-                            <ExpandMore
-                                expand={expanded}
-                                onClick={handleExpandClick}
-                                aria-expanded={expanded}
-                                aria-label="Ver mas"
-                            >
-                                <ExpandMoreIcon />
-                            </ExpandMore>
-                        </CardActions>
-                        <Collapse in={expanded} timeout="auto" unmountOnExit>
-                            <CardContent>
-
-                                <div className='contenedorInfo'>
-
-                                    <h1>awawa</h1>
-
-                                </div>
-
-                                <div className='contenedorInfo'>
-
-                                    <IconButton aria-label="Ubicacion">
-                                        <MapIcon />
-                                    </IconButton>
-                                    <Typography paragraph>
-                                        {post.ubicacion}
-                                    </Typography>
-
-                                </div>
-
-                                <div className='contenedorInfo'>
-
-
-                                    <IconButton aria-label="Horario">
-                                        <AccessTimeIcon />
-                                    </IconButton>
-                                    <Typography paragraph>
-                                        {post.horario}
-                                    </Typography>
-
-
-                                </div>
-
-                                <div className='contenedorInfo'>
-
-                                    <IconButton aria-label="Ubicacion">
-                                        <PermContactCalendarIcon />
-                                    </IconButton>
-                                    <Typography paragraph>
-                                        {post.contacto}
-
-                                    </Typography>
-
-                                </div>
-
-
-                                <div className='contenedorInfo'>
-                                    <Typography>
-                                        Lorem ipsum dolor sit amet, consectetur...
-                                    </Typography>
-                                </div>
-                                <button
-                                    type="button"
-                                    class="btn btn-success">
-                                    Ver mas
-                                </button>
-                            </CardContent>
-                        </Collapse>
-                    </Card>
-                ))}
-
-            </div>
+        <div className="all">
+      <div className="barraTitulo">
+        <div className="buscar">
+        <div className="texto">
+          <h1 className="titulo">{infoText}</h1>
         </div>
+          <TextField
+            className="search"
+            id="outlined-basic"
+            variant="outlined"
+            label="Search"
+            onChange={handleChange}
+            value={busqueda}
+          />
         </div>
-    );
-
+      </div>
+      <div class="grid">
+        <hr />
+        <div class="row casillas responsive">
+          {searchName &&
+            Posts.map((post) => (
+              <div class="col">
+                <Card sx={{ maxWidth: 300 }} className="card">
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={post.url}
+                    alt="no_image"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <a href="*" className="boton">
+                      {post.usuario.comuna.nombreComuna}-{post.usuario.comuna.provincia.region.nombreRegion}
+                      </a>
+                      <hr />
+                      {post.titulo}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                    Ubicacion: {post.ubicacion}
+                      <br />
+                      <hr />
+                      Horario:{post.horario} -{" "}<br />
+                      Contacto: {post.contacto}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small">Compartir</Button>
+                    <Button size="small">Leer mas</Button>
+                  </CardActions>
+                </Card>
+              </div>
+            ))}
+        </div>
+      </div>
+    </div>
+  );
 };
+        
+export default TarjetaVetComponent;
