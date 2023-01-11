@@ -1,6 +1,6 @@
 import React, {  useEffect, useState } from "react";
 import { getAllPost, findAllNombrePost } from "../services/Post";
- import { Publicacion, Navbar, FooterComponent } from "../components";
+ import { Publicacion, Navbar, FooterComponent, ComentarioComponent } from "../components";
 
  import "./PubliPage.css";
 
@@ -34,6 +34,9 @@ const PubliPage = () => {
       <Navbar />
       <div class="grilla">
       <Publicacion Posts={state} search = {allNombrePost} />
+      </div>
+      <div>
+      <ComentarioComponent/>
       </div>
       <FooterComponent />
     </div>
