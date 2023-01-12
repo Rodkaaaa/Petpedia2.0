@@ -10,24 +10,23 @@ const Publicacion = ({ Posts, search, getById }) => {
   console.log(post)
   return (
     <div class="publicacion">
-      {Posts.map((post) => (
         <div className='contenedor-testimonio'>
           <img
             className='imagen-testimonio'
-            src={post.url }
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Beagle_Faraon.JPG/1200px-Beagle_Faraon.JPG"
             alt='Foto de Cori' />
 
           <div className='contenedorTextoTestimonio'>
             <br></br>
             <br></br>
             <p className='tituloTestimonio'>
-              {post.titulo} </p> 
+            Se regalan perritos beagle </p> 
       
         
 
             <Rating />
-            <p className='textoTestimonio'>"{post.contenido}"</p>
-            <p className="comuna"> {post.usuario.comuna.nombreComuna}, {post.usuario.direccion}</p>
+            <p className='textoTestimonio'>""Se regalan perritos vacunados y esterelizados""</p>
+            <p className="comuna"> Casablanca, El Greco #1324</p>
             <br></br>
             <button type="button" class="btn btn-outline-warning">#Adopción</button>
             <button type="button" class="btn btn-outline-warning">#Gatitos</button>
@@ -40,7 +39,6 @@ const Publicacion = ({ Posts, search, getById }) => {
 
           </div>
         </div>
-        ))}
   </div>
   )
 }
