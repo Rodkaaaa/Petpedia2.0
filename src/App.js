@@ -14,8 +14,8 @@ const App = () => {
       <Route path="/publicaciones" element={<Publicaciones />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/veterinarias" element={<VeterinariasPage />} />
-      <Route path="/publicacion/" element={<PubliPage />}/>
-      <Route path="/publicacion/:id" element={<PubliPage />}/>
+      <Route path="/publicacion" element={<PubliPage />}/>
+      <Route path="/publicacion/1" element={<PubliPage />}/>
       </Routes>
     </BrowserRouter>
   );
