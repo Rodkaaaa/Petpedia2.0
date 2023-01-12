@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import './Publicacion.css';
 import Rating from './Rating';
 
 
-const Publicacion = ({ Posts, search }) => {
+const Publicacion = ({ Posts, search, getById }) => {
+  const {id} = useParams();
+  const post = Posts.find(post => post.id === id )
+  console.log(post)
   return (
     <div class="publicacion">
-      {Posts.map((post = 1, index = 1) => (
+      {Posts.map((post) => (
         <div className='contenedor-testimonio'>
           <img
             className='imagen-testimonio'
@@ -36,9 +40,7 @@ const Publicacion = ({ Posts, search }) => {
 
           </div>
         </div>
-     
-
-  ))}
+        ))}
   </div>
   )
 }

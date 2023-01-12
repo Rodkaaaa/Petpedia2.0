@@ -1,6 +1,7 @@
 import React, {  useEffect, useState } from "react";
 import { getAllPost, findAllNombrePost } from "../services/Post";
- import { Publicacion, Navbar, FooterComponent, ComentarioComponent } from "../components";
+import { Publicacion, Navbar, FooterComponent, ComentarioComponent } from "../components";
+
 
  import "./PubliPage.css";
 
@@ -29,11 +30,15 @@ const PubliPage = () => {
     getPost();
   }
 
+  const getById = async(id)=>{
+    const postDB = await getPostById(id)
+    setState(postDB)
+  }
   return (
     <div>
       <Navbar />
       <div class="grilla">
-      <Publicacion Posts={state} search = {allNombrePost} />
+      <Publicacion Posts={state} search = {allNombrePost} getById={getById} />
       </div>
       <div>
       <ComentarioComponent/>
