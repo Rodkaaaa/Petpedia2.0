@@ -8,6 +8,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import SearchIcon from "@mui/icons-material/Search";
+import { Link } from "react-router-dom";
 import "./Card.css";
 
 const CardPostComponent = ({
@@ -16,6 +17,7 @@ const CardPostComponent = ({
   setPostEditado,
   useEffects,
   infoText,
+  getById
 }) => {
   const [busqueda, setBusqueda] = useState("");
 
@@ -93,7 +95,9 @@ const CardPostComponent = ({
                   </CardContent>
                   <CardActions>
                     <Button size="small">Compartir</Button>
-                    <Button size="small">Leer mas</Button>
+                    <Link to={`/publicacion/${post.id}`} onClick= {()=>{
+                      getById(post.id)
+                    }}><Button size="small">Leer mas</Button></Link>
                   </CardActions>
                 </Card>
               </div>

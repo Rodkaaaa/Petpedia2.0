@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CardPostComponent, Navbar, FooterComponent } from "../components";
 import "./Publicaciones.css";
-import { getAllPost } from "../services/Post";
+import { getAllPost, getPostById } from "../services/Post";
 /* import TextField from "@mui/material/TextField";
  */
 
@@ -20,6 +20,11 @@ const Publicaciones = () => {
     setState(postBD);
     setStateSearch(postBD);
   };
+
+  const getById = async(id)=>{
+    const postDB = await getPostById(id)
+    setState(postDB)
+  }
 
   /* const getComuna = async()=>{
   const ComunaBD = await getAllComuna();
@@ -41,6 +46,7 @@ const allNombrePost = async(nombre)=>{
           Posts={state}
           searchName={stateSearch}
           useEffects={useEffect}
+          getById = {getById}
           infoText = "Publicaciones"
         />
       </div>
