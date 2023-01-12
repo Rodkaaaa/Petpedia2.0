@@ -43,7 +43,9 @@ const PubliPage = () => {
       <div>
       <ComentarioComponent/>
       </div>
+      <div>
       <FooterComponent />
+      </div>
     </div>
 
     
