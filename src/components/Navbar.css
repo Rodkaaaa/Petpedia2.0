@@ -20,7 +20,8 @@ header{
 .botoncito {
     margin-left: auto;
     background-color: #FF8C72;
-    border-radius: 8px;
+    border-radius: 10px;
+    border-color:#fff;
     height: 35px;
     width: 70px;
 }

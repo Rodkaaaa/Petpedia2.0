@@ -6,7 +6,8 @@ import {
   FooterComponent,
 } from "../components";
 import "./Home.css";
-import estadis from "../img/estadisticas.png"
+import estadis from "../img/estadisticas01.png"
+import lastpubli from "../img/publicaciones001.png"
 
 const Home = () => {
   return (
@@ -24,6 +25,15 @@ const Home = () => {
             alt="..."
           />
       </div>
+
+      <div className="ultimasPublicaciones">
+      <img
+            src={lastpubli}
+            class="d-block w-100"
+            alt="..."
+          />
+      </div>
+      
       <div className="completeSection">
         <div className="texto">
           <h2 className="tituloSection">Artículos de interés </h2>
@@ -31,6 +41,9 @@ const Home = () => {
             Los especialistas nos entregan todo su conocimiento
           </p>
         </div>
+
+
+
         <div className="section ">
           <SectionBody />
         </div>
