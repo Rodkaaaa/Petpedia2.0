@@ -1,32 +1,33 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import './Publicacion.css';
 import Rating from './Rating';
 
 
-const Publicacion = ({ Posts, search }) => {
+const Publicacion = ({ Posts, search, getById }) => {
+  const {id} = useParams();
+  const post = Posts.find(post => post.id === id )
+  console.log(post)
   return (
-    <div class="container">
-      <input 
-      onChange={search}
-      type="text"/>
+    <div class="publicacion">
       {Posts.map((post) => (
         <div className='contenedor-testimonio'>
           <img
             className='imagen-testimonio'
-            src={post.url}
+            src={post.url }
             alt='Foto de Cori' />
 
-          <div className='contenedor-texto-testimonio'>
+          <div className='contenedorTextoTestimonio'>
             <br></br>
             <br></br>
-            <p className='titulo-testimonio'>
+            <p className='tituloTestimonio'>
               {post.titulo} </p> 
       
         
 
             <Rating />
-            <p className='texto-testimonio'>"{post.contenido}"</p>
-            <p className="comuna"> {post.usuario.comuna.nombreComuna}</p>
+            <p className='textoTestimonio'>"{post.contenido}"</p>
+            <p className="comuna"> {post.usuario.comuna.nombreComuna}, {post.usuario.direccion}</p>
             <br></br>
             <button type="button" class="btn btn-outline-warning">#Adopción</button>
             <button type="button" class="btn btn-outline-warning">#Gatitos</button>
@@ -39,9 +40,7 @@ const Publicacion = ({ Posts, search }) => {
 
           </div>
         </div>
-     
-
-  ))}
+        ))}
   </div>
   )
 }
