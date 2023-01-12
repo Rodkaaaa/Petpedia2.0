@@ -7,6 +7,11 @@ const getAllPost = async () => {
   return res.data;
 };
 
+const getPostById = async (id) => {
+  const res = await axios.get(url + "post/getAll" + id);
+  return res.data;
+};
+
 const findAllNombrePost = async (nombre) => {
   console.log(nombre)
   const res = await axios.get(url + "post/get/" + nombre);
@@ -14,4 +19,4 @@ const findAllNombrePost = async (nombre) => {
   return res.data;
 };
 
-export { getAllPost, findAllNombrePost };
+export { getAllPost, findAllNombrePost, getPostById };
