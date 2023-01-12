@@ -95,9 +95,7 @@ const CardPostComponent = ({
                   </CardContent>
                   <CardActions>
                     <Button size="small">Compartir</Button>
-                    <Link to={`/publicacion/${post.id}`} onClick= {()=>{
-                      getById(post.id)
-                    }}><Button size="small">Leer mas</Button></Link>
+                    <Link to={`/publicacion/1`}><Button size="small">Leer mas</Button></Link>
                   </CardActions>
                 </Card>
               </div>

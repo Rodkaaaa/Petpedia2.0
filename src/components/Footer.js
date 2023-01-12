@@ -41,7 +41,7 @@ const FooterComponent = () => {
         <div class="widget no-box">
         <h5 class="widget-title">Suscripción<span></span></h5>
         <p>Obtén acceso a nuestras noticias semanales</p>
-        <a class="btn" href="https://bit.ly/3m9avif" target="_blank">Suscríbete Ahora</a>
+        <a class="btn" href="" target="_blank">Suscríbete Ahora</a>
         </div>
         </div>
         
