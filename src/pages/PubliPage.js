@@ -35,7 +35,9 @@ const PubliPage = () => {
       <div class="grilla">
       <Publicacion Posts={state} search = {allNombrePost} />
       </div>
+      <div>
       <FooterComponent />
+      </div>
     </div>
 
     

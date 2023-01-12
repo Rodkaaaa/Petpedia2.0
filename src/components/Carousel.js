@@ -1,35 +1,35 @@
 import React from "react";
 import "./Carousel.css"
-import foto1 from "../img/hero1.png"
-import foto2 from "../img/hero2.png"
-import foto3 from "../img/hero3.png"
+import foto1 from "../img/hero001.png"
+import foto2 from "../img/hero002.png"
+import foto3 from "../img/hero003.png"
 
 const CarouselComponent = () => {
   return (
     <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img
-            src={foto1}
-            class="d-block w-100"
-            alt="..."
-          />
+        <img src={foto1} class="d-block w-100" alt="..." ></img>
+  <div class="carousel-caption d-none d-md-block">
+    <h2>Búsqueda de veterinarias</h2>
+    <h5>Según tu comuna de residencia, especialidades y servicios</h5>
+  </div>
         </div>
         <div class="carousel-item">
-          <img
-            src={foto2}
-            class="d-block w-100"
-            alt="..."
-          />
+        <img src={foto2} class="d-block w-100" alt="..." ></img>
+  <div class="carousel-caption d-none d-md-block">
+    <h2>Comparte tus datos</h2>
+    <h5>Ayuda a otros usuarios a encontrar datos de esterilización, vacunas, controles veterinarios y más</h5>
+  </div>
         </div>
         <div class="carousel-item">
-          <img
-            src={foto3}
-            class="d-block w-100"
-            alt="..."
-          />
+        <img src={foto3} class="d-block w-100" alt="..." ></img>
+  <div class="carousel-caption d-none d-md-block">
+    <h2>Nos interesa la salud de tu mascota</h2>
+    <h5>La más grande red de recintos veterinarios, especialistas en diversas áreas de medicina veterinaria y artículos de interés</h5>
+  </div>
+  </div>
         </div>
-      </div>
       <button
         class="carousel-control-prev"
         type="button"
