@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TarjetaVetComponent, Navbar, FooterComponent, CardPostComponent } from "../components";
 import "./Veterinarias.css";
-import { getAllPost } from "../services/Post";
+import { getAllPost, getPostVet } from "../services/Post";
 
 const VeterinariasPage = () => {
   const [state, setState] = useState([]);
@@ -12,7 +12,7 @@ const VeterinariasPage = () => {
   }, []);
 
   const getPost = async () => {
-    const postBD = await getAllPost();
+    const postBD = await getPostVet();
     setState(postBD);
     setStateSearch(postBD);
   };

@@ -3,7 +3,7 @@ import axios from "axios";
 import { url } from "./Config";
 
 const getAllPost = async () => {
-  const res = await axios.get(url + "post/getAll");
+  const res = await axios.get(url + "post/getAll/");
   return res.data;
 };
 
@@ -19,4 +19,14 @@ const findAllNombrePost = async (nombre) => {
   return res.data;
 };
 
-export { getAllPost, findAllNombrePost, getPostById };
+const getPostVet = async() =>{
+  const res = await axios.get(url + "post/veterinarias/");
+  return res.data;
+}
+
+const getPostUser = async() =>{
+  const res = await axios.get(url + "post/usuarios/");
+  return res.data;
+}
+
+export { getAllPost, findAllNombrePost, getPostById, getPostVet, getPostUser };

@@ -65,16 +65,16 @@ const CardPostComponent = ({
       </div>
       <div class="grid">
         <hr />
-        <div class="row casillas responsive">
+        <div class="row responsive casillas">
           {searchName &&
             Posts.map((post) => (
               <div class="col">
-                <Card sx={{ maxWidth: 300 }} className="card">
+                <Card sx={{ maxWidth: "auto" }} className="card">
                   <CardMedia
                     component="img"
                     height="140"
                     image={post.url}
-                    alt="no_image"
+                    alt="404 Img not found"
                   />
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
