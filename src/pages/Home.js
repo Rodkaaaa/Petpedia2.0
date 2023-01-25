@@ -34,7 +34,7 @@ const Home = () => {
           />
       </div>
       
-      <div className="completeSection">
+      <div className="completeSection responsive">
         <div className="texto">
           <h2 className="tituloSection">Artículos de interés </h2>
           <p className="textSection">

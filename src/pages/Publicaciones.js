@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CardPostComponent, Navbar, FooterComponent } from "../components";
 import "./Publicaciones.css";
-import { getAllPost, getPostById } from "../services/Post";
+import { getPostUser, getPostById } from "../services/Post";
 /* import TextField from "@mui/material/TextField";
  */
 
@@ -16,7 +16,7 @@ const Publicaciones = () => {
   }, []);
 
   const getPost = async () => {
-    const postBD = await getAllPost();
+    const postBD = await getPostUser();
     setState(postBD);
     setStateSearch(postBD);
   };
