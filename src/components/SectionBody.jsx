@@ -27,7 +27,8 @@ const SectionBody = () => {
           <div
             class="card"
             style={{
-              width: `18rem`,
+              width: `15rem`,
+              height: `22rem`,
             }}
           >
             <img
@@ -49,7 +50,8 @@ const SectionBody = () => {
           <div
             class="card"
             style={{
-              width: `18rem`,
+              width: `15rem`,
+              height: `22rem`,
             }}
           >
             <img
@@ -70,7 +72,8 @@ const SectionBody = () => {
           <div
             class="card"
             style={{
-              width: `18rem`,
+              width: `15rem`,
+              height: `22rem`,
             }}
           >
             <img
@@ -91,7 +94,8 @@ const SectionBody = () => {
           <div
             class="card"
             style={{
-              width: `18rem`,
+              width: `15rem`,
+              height: `22rem`,
             }}
           >
             <img
